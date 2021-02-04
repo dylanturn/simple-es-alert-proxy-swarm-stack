@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  proxy:
+    image: docker.pkg.github.com/dylanturn/es_alerting_web_proxy/es-alerting-web-proxy:latest
+    command: "python discord_es_proxy.py"
+    ports:
+      - 8080
